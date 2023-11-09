@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raj Notes App</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- 
+  bootstrap class name: reason for the class
+  -----------
+  container:        center the content and add some padding around it
+  my-4:             add some vertical margin to the title
+  form-control:     style the textarea
+  btn, btn-primary: style the button
+  mt-2:             add some top margin to the button.
+
+
+  https://getbootstrap.com/docs/5.3/layout/containers/
+  https://getbootstrap.com/docs/5.3/utilities/spacing/
+
+  https://www.w3schools.com/bootstrap/bootstrap_forms.asp
+  https://getbootstrap.com/docs/5.3/forms/form-control/
+
+  -->
+
+
+
+
+
+  <div class="container">
+    <h1 class="my-4">My Note-Taking App</h1>
+    <div class="row">
+        <div class="col-md-8 order-1 order-md-2">
+            <form id="note-form" class="mb-4">
+                <textarea id="note-input" class="form-control" rows="3" placeholder="Enter your note here..."></textarea>
+                <button type="submit" class="btn btn-primary mt-2">Add Note</button>
+            </form>
+            <button class="btn btn-secondary d-md-none mb-4" type="button" data-toggle="collapse" data-target="#note-index" aria-expanded="false" aria-controls="note-index">
+                Toggle Index
+            </button>
+            <div id="notes-section"></div>
+        </div>
+        <div class="col-md-4 order-2 order-md-1 collapse d-md-block" id="note-index">
+            <div class="list-group"></div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../js/script.js"></script>
+
+
+    <!-- 
+      <h1>Welcome to Raj Notes App</h1>
+      <div class="content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="note1.html">Note 1</a></li>
+                <li><a href="note2.html">Note 2</a></li>
+                <li><a href="note3.html">Note 3</a></li>
+                <li><a href="note4.html">Note 4</a></li>
+                <li><a href="note5.html">Note 5</a></li>     
+            </ul>
+        </nav>
+        <div class="note-content">
+          <form id="note-form">
+            <textarea id="note-input" placeholder="Enter your note here..."></textarea>
+            <button type="submit">Add Note</button>
+          </form>
+          <div id="notes-section"></div>
+          <script src="../js/script.js"></script>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc et tincidunt tincidunt, massa ipsum lacinia massa, non semper felis lorem nec lorem. Donec elementum, orci ac lobortis cursus, sem metus malesuada nisl, ac scelerisque nisl diam nec metus.</p>
+        </div>
+    </div> -->
+
+
+
+  </body>
+</html>
